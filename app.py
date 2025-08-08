@@ -3,6 +3,7 @@ import re
 from flask import Flask, render_template, request
 from google import genai
 
+# Gemini API Key (same as your original)
 API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyBobob3QNfQntqTuZspp5fNfJi5-KefKNU")
 client = genai.Client(api_key=API_KEY)
 
@@ -76,5 +77,7 @@ def index():
             health_advice = markdown_to_html(advice_raw)
     return render_template("index.html", diet_plan=diet_plan, health_advice=health_advice)
 
+# Vercel will use this `app` variable automatically
 if __name__ == "__main__":
+    # Local run
     app.run(debug=True)
