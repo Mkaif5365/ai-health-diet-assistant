@@ -1,0 +1,108 @@
+body {
+    background: #f7faff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0; padding: 0;
+}
+.container {
+    max-width: 900px;
+    width: 92vw; 
+    margin: 35px auto 22px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(30,70,110,0.10);
+    padding: 31px 28px 32px 28px;
+}
+.ai-output-wide {
+    background: #ffffff;
+    border: 2.5px solid #c0dafe;
+    border-radius: 15px;
+    box-shadow: 0 7px 40px 0 rgba(44,102,170,0.12);
+    margin: 30px auto 30px auto;
+    width: 97vw;
+    max-width: 900px;
+    min-width: 340px;
+    box-sizing: border-box;
+    padding: 3vw 4vw 2vw 4vw;
+    color: #202245;
+    font-size: 1.11em;
+    line-height: 1.67;
+}
+.ai-output-wide .blue-heading {
+    color: #246be1;
+    font-size: 2.05em;
+    font-weight: 900;
+    margin-bottom: 18px;
+    letter-spacing: 0.01em;
+}
+.ai-output-wide .section {
+    color: #2679c9;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-top: 34px;
+    margin-bottom: 10px;
+}
+.ai-output-wide ul, .ai-output-wide ol {
+    margin: 12px 0 14px 26px;
+    padding-left: 0;
+}
+.ai-output-wide li {
+    margin-bottom: 8px;
+    line-height: 1.52;
+}
+.ai-output-wide b {
+    color: #1e5abb;
+    font-weight: bold;
+}
+@media (max-width: 1020px) {
+    .ai-output-wide { width: 99vw; padding: 6vw 3vw 4vw 3vw;}
+}
+label {
+    font-weight: 600;
+    color: #2c3e70;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1em;
+}
+input[type="number"], input[type="text"], select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1em;
+    border: 1px solid #a8c3ff;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+input[type="number"]:focus, input[type="text"]:focus, select:focus {
+    outline: none;
+    border-color: #246be1;
+    box-shadow: 0 0 5px #aac9ff;
+}
+input[type="submit"] {
+    width: 100%;
+    background-color: #246be1;
+    color: white;
+    font-size: 1.12em;
+    font-weight: 700;
+    padding: 14px 0;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 8px;
+}
+input[type="submit"]:hover {
+    background-color: #1a4fc1;
+}
+fieldset {
+    border: none;
+    margin-bottom: 26px;
+}
+legend {
+    color: #1e3991;
+    font-weight: 800;
+    font-size: 1.25em;
+    margin-bottom: 14px;
+    border-bottom: 2px solid #246be1;
+    padding-bottom: 6px;
+}

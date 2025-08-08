@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> AI Diet & Healthcare Advisor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Same CSS as your original inline HTML */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="color:#17478c;font-size:1.6em;text-align:center;">
+            AI Diet & Health Advice<br>
+            <small style="font-size:0.7em;color:#9ab;">Created by AI ARCHITECT</small>
+        </h2>
+        <form method="post" autocomplete="off">
+            <fieldset>
+                <legend>Personal Details for Diet Plan</legend>
+                <label for="age">Age:</label>
+                <input id="age" name="age" required type="number" min="1" max="120" placeholder="Enter your age">
+
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender" required>
+                    <option value="male" selected>Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="weight">Weight (kg):</label>
+                <input id="weight" name="weight" required type="number" min="1" max="500" placeholder="Your weight in kilograms">
+
+                <label for="height">Height (cm):</label>
+                <input id="height" name="height" required type="number" min="30" max="260" placeholder="Your height in centimeters">
+            </fieldset>
+
+            <fieldset>
+                <legend>Healthcare Advice <small>(Optional)</small></legend>
+                <label for="symptom">Your concern or health goal:</label>
+                <input id="symptom" name="symptom" type="text" placeholder="E.g., headaches, sleep tips">
+            </fieldset>
+
+            <input type="submit" value="Get Advice">
+        </form>
+    </div>
+
+    {% if diet_plan %}
+    <div class="ai-output-wide">{{ diet_plan|safe }}</div>
+    {% endif %}
+    {% if health_advice %}
+    <div class="ai-output-wide">{{ health_advice|safe }}</div>
+    {% endif %}
+</body>
+</html>
