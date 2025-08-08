@@ -3,7 +3,7 @@ import re
 from flask import Flask, render_template, request
 from google import genai
 
-API_KEY = os.environ.get("GEMINI_API_KEY", "google-api-key")
+API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyBobob3QNfQntqTuZspp5fNfJi5-KefKNU")
 client = genai.Client(api_key=API_KEY)
 
 # --- Markdown "cleaner" and formatter ---
